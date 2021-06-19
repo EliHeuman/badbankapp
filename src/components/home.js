@@ -14,7 +14,7 @@ function Home(){
         <img 
           src={badbank} 
           className='figure-img img-fluid rounded shadow-3 mb-3' 
-          alt="Responsive image"
+          alt="Responsive"
         />
       )}
       />   
