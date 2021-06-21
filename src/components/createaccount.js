@@ -1,7 +1,7 @@
 import React from 'react';
-// import { createBootstrapComponent } from 'react-bootstrap/esm/ThemeProvider';
 import {Card} from '../context';
 import {UserContext} from '../context';
+// import { createBootstrapComponent } from 'react-bootstrap/esm/ThemeProvider';
 
 function CreateAccount(){
   const [show, setShow]         = React.useState(true);
@@ -50,7 +50,7 @@ function CreateAccount(){
               <input type="input" className="form-control" id="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.currentTarget.value)}/><br/>
               Password<br/>
               <input type="password" className="form-control" id="password" placeholder="Enter password" value={password} onChange={e => setPassword(e.currentTarget.value)}/><br/>
-              <button type="submit" className="btn btn-light" onClick={handleCreate}>Create Account</button>
+              <button type="submit" className="btn btn-dark" onClick={handleCreate}>Create Account</button>
               </div>
             ):(
               <div>

@@ -12,11 +12,16 @@
 .nav-link {
   color: brown;
 }
-
-.nav-item>a:hover {
+.nav-link:hover {
   color: white;
 }
 
+
+.btn-primary{
+  background-color: rgb(33, 37, 41) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
 .nav.nav-pills .nav-link.active {
   background-color: rgb(33, 37, 41);
   border-style: solid;
