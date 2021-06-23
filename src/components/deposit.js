@@ -3,18 +3,23 @@ import {Card} from '../context';
 import {UserContext} from '../context.js';
 import {Account} from '../context';
  
+//Create Deposit Component.
 function Deposit(){
+// ctx has users data as context.
   const ctx = React.useContext(UserContext);
-  console.log(ctx.users[0].balance);
+  //console.log(ctx.users[0].balance);
   
   return (
+//Card Component.
     <>
       <Card
           header="Deposit" 
           bgcolor="dark"     
-          body={<Account
-                ctx = {ctx}
-                depositStatus = {true}
+          body={
+// Account Component with depositStatus set to true.
+                <Account
+                  ctx = {ctx}
+                  depositStatus = {true}
                />
           }
         />
