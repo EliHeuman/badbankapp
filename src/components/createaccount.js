@@ -12,8 +12,9 @@ function CreateAccount(){
   const [name, setName]         = React.useState('');
   const [email, setEmail]       = React.useState('');
   const [password, setPassword] = React.useState('');
+  const [validButton, setvalidButton] = React.useState(true);
   const ctx = React.useContext(UserContext);  
-  // Validation for the name state.
+// Validation for the name state.
   function nameValidation(fieldName, fieldValue) {
     if (fieldValue.trim() === '') {
       setStatus( `Error: ${fieldName} is required`);
@@ -21,7 +22,7 @@ function CreateAccount(){
     }
     return true;
   }
-  // Validation for the email state.
+// Validation for the email state.
   function emailValidation(email) {
     if (email.trim() === '') {
       setStatus('Error: Email is required');
@@ -29,7 +30,7 @@ function CreateAccount(){
     }
     return true;
   }
-  // Validation for the password state.
+// Validation for the password state.
   function passwordValidation(password) {
     if (password.length < 8) {
       setStatus('Error: The password is not long enough.');
@@ -51,12 +52,23 @@ function CreateAccount(){
      } 
      return ;
   }    
-
+//Clears form data.
   function clearForm(){
     setName('');
     setEmail('');
     setPassword('');
     setShow(true);
+  }
+
+//Disables and enables the submit button.
+  function validate(props){
+    setvalidButton((
+     ((( name !== '') ||
+     ( email !== '') ||
+      (password !== '')) &&
+      props !== '' ) ?
+      false : true )
+    );
   }
 
   return (
@@ -72,11 +84,11 @@ function CreateAccount(){
                   <InputGroup.Text  >Name</InputGroup.Text>
                 </InputGroup.Prepend> 
                 <FormControl
-                  type="input"
+                  type="text"
                   id="name"
                   placeholder="Enter name"
                   value={name}
-                  onChange={(e) => setName(e.currentTarget.value)}
+                  onChange={(e)=>{setName(e.target.value); validate(e.target.value); }}
                 />
               </Col>
             </InputGroup>
@@ -86,11 +98,11 @@ function CreateAccount(){
                   <InputGroup.Text  >Email</InputGroup.Text>
                 </InputGroup.Prepend> 
                 <FormControl
-                  type="input"
+                  type="text"
                   id="email"
                   placeholder="Enter email"
                   value={email}
-                  onChange={(e) => setEmail(e.currentTarget.value)}
+                  onChange={(e)=>{setEmail(e.target.value); validate(e.target.value); }}
                 />
               </Col>
             </InputGroup>
@@ -100,11 +112,11 @@ function CreateAccount(){
                   <InputGroup.Text  >Password</InputGroup.Text>
                 </InputGroup.Prepend> 
                 <FormControl
-                  type="input"
+                  type="text"
                   id="password"
                   placeholder="Enter password"
                   value={password}
-                  onChange={(e) => setPassword(e.currentTarget.value)}
+                  onChange={(e)=>{setPassword(e.target.value); validate(e.target.value); }}
                 />
               </Col>
             </InputGroup>   
@@ -113,7 +125,9 @@ function CreateAccount(){
               style={{float:'left',  margin: "15px"}}
               className="btn btn-dark" type="submit"
               value="Submit" id="submit-input"
+              disabled={validButton}
               onClick={handleCreate}
+              onChange={validate}
             >
               Create Account
             </Button>        
