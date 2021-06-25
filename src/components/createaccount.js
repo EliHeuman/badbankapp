@@ -89,7 +89,7 @@ function handleChange (props){
                   id="name"
                   placeholder="Enter name"
                   value={name}
-                  onChange={(e)=>{handleChange(e.target); console.log(e.target) }}
+                  onChange={(e)=>handleChange(e.target)}
               
                 />
               </Col>
@@ -104,7 +104,7 @@ function handleChange (props){
                   id="email"
                   placeholder="Enter email"
                   value={email}
-                  onChange={(e)=>{handleChange(e.target); }}
+                  onChange={(e)=>handleChange(e.target)}
                 />
               </Col>
             </InputGroup>
@@ -118,7 +118,7 @@ function handleChange (props){
                   id="password"
                   placeholder="Enter password"
                   value={password}
-                  onChange={(e)=>{handleChange(e.target); }}
+                  onChange={(e)=>handleChange(e.target)}
                 />
               </Col>
             </InputGroup>   
