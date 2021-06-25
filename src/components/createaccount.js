@@ -12,7 +12,6 @@ function CreateAccount(){
   const [name, setName]         = React.useState('');
   const [email, setEmail]       = React.useState('');
   const [password, setPassword] = React.useState('');
-  const [empty, setEmpty] = React.useState(true);
   const [validButton, setvalidButton] = React.useState(true);
   const ctx = React.useContext(UserContext);  
 // Validation for the name state.
