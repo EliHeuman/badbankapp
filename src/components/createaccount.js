@@ -12,6 +12,7 @@ function CreateAccount(){
   const [name, setName]         = React.useState('');
   const [email, setEmail]       = React.useState('');
   const [password, setPassword] = React.useState('');
+  const [empty, setEmpty] = React.useState(true);
   const [validButton, setvalidButton] = React.useState(true);
   const ctx = React.useContext(UserContext);  
 // Validation for the name state.
@@ -61,14 +62,14 @@ function CreateAccount(){
   }
 
 //Disables and enables the submit button.
-  function validate(props){
-    setvalidButton((
-     ((( name !== '') ||
-     ( email !== '') ||
-      (password !== '')) &&
-      props !== '' ) ?
-      false : true )
-    );
+function handleChange (props){
+  if(props.id === 'name') setName(props.value);
+  if(props.id === 'email') setEmail(props.value);
+  if(props.id === 'password') setPassword(props.value);
+  if(props.value !== '')setvalidButton(false);
+  if(props.id === 'name' && props.value === '') setvalidButton((email === '') && (password === '') ? true : false);
+  if(props.id === 'email' && props.value === '') setvalidButton((name === '') && (password === '') ? true : false);
+  if(props.id === 'password' && props.value === '') setvalidButton((email === '') && (name === '') ? true : false);
   }
 
   return (
@@ -84,11 +85,12 @@ function CreateAccount(){
                   <InputGroup.Text  >Name</InputGroup.Text>
                 </InputGroup.Prepend> 
                 <FormControl
-                  type="text"
+                  type="input"
                   id="name"
                   placeholder="Enter name"
                   value={name}
-                  onChange={(e)=>{setName(e.target.value); validate(e.target.value); }}
+                  onChange={(e)=>{handleChange(e.target); console.log(e.target) }}
+              
                 />
               </Col>
             </InputGroup>
@@ -98,11 +100,11 @@ function CreateAccount(){
                   <InputGroup.Text  >Email</InputGroup.Text>
                 </InputGroup.Prepend> 
                 <FormControl
-                  type="text"
+                  type="input"
                   id="email"
                   placeholder="Enter email"
                   value={email}
-                  onChange={(e)=>{setEmail(e.target.value); validate(e.target.value); }}
+                  onChange={(e)=>{handleChange(e.target); }}
                 />
               </Col>
             </InputGroup>
@@ -112,11 +114,11 @@ function CreateAccount(){
                   <InputGroup.Text  >Password</InputGroup.Text>
                 </InputGroup.Prepend> 
                 <FormControl
-                  type="text"
+                  type="input"
                   id="password"
                   placeholder="Enter password"
                   value={password}
-                  onChange={(e)=>{setPassword(e.target.value); validate(e.target.value); }}
+                  onChange={(e)=>{handleChange(e.target); }}
                 />
               </Col>
             </InputGroup>   
@@ -127,7 +129,6 @@ function CreateAccount(){
               value="Submit" id="submit-input"
               disabled={validButton}
               onClick={handleCreate}
-              onChange={validate}
             >
               Create Account
             </Button>        
