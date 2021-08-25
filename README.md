@@ -11,7 +11,10 @@ The BadBank APP - is build for the use of an acounting system. it helps users tr
 The app is build in REACT and has linked components using the Navbar.
 
 ## Installation Guidelines:
-Clear instructions on how to get your project up and running (e.g., git clone, git pull, npm init).
+To get your project up and running<br>
+1. Use git clone<br>
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)<br>
+(e.g., git clone, git pull, npm init).
 
 ###### list of links to the different repositories showcased:
 Repository Name  | Link
