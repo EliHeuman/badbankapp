@@ -1,7 +1,7 @@
 # BadBank-Project
-M.I.T xPRO GitHub Pages Portfolio Assignment<br>
-Eli Heuman's GitHub Portfolio Project:<a href="https://github.com/EliHeuman/eliheuman.github.io"> Repository</a><br>
-Eli Heuman's website:<a href=https://eliheuman.github.io> eliheuman.github.io</a>
+M.I.T xPRO GitHub BadBank Project<br>
+Eli Heuman's GitHub BadBank Project:<a href="https://github.com/EliHeuman/eliheuman.github.io"> Repository</a><br>
+BadBank website:<a href=https://eli-heumanbankingapplication.s3.amazonaws.com/index.html> AWS-bankingapplication</a>
 ___
 
 The GitHub Portfolio Project concludeds the first ten weeks of the MIT xPRO Full Stack Development with MERN course.
