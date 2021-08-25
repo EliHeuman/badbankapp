@@ -6,7 +6,7 @@ ___
 
 The GitHub Portfolio Project concludeds twenty weeks of the MIT xPRO Full Stack Development with MERN course.
 
-## Description of the Project 
+## Description of the Project
 The BadBank APP - is build for the use of an acounting system. it helps users track thier account balance deposit and withdraw.
 The app is build in REACT and has linked components using the Navbar.
 
@@ -14,10 +14,9 @@ The app is build in REACT and has linked components using the Navbar.
 To get your project up and running<br>
 1. Click on **Fork** the repository in master branch<br>
 ![Image of Fork Button](https://github.com/EliHeuman/badbankapp/blob/master/Fork.JPG?raw=true)<br>
-2. Use th terminal and go to the file path were you want to install the app. Use git clone - go to your termianal type **git clone** with the extention as shown in the pictuer.<br>
+2. Use the terminal and go to the file path were you want to install the app. Use git clone - go to your termianal type **git clone** with the extention as shown in the pictuer.<br>
 ![Image of Clone Button](https://github.com/EliHeuman/badbankapp/blob/master/Clone.JPG?raw=true)<br>
-(e.g., git clone, git pull, npm init).
-
+3.. In the file path were you want to install the app. run **NPM INSTALL**
 ###### list of links to the different repositories showcased:
 Repository Name  | Link
 -------------|--------------------
