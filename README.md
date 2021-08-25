@@ -9,7 +9,7 @@ The GitHub Portfolio Project concludeds twenty weeks of the MIT xPRO Full Stack 
 ## Description of the Project
 The BadBank APP - is build for the use of an acounting system. it helps users track thier account balance deposit and withdraw.
 The app is build in REACT and has linked components using the Navbar.
-
+___
 ## Installation Guidelines:
 To get your project up and running<br>
 1. Click on **Fork** the repository in master branch<br>
@@ -20,7 +20,11 @@ To get your project up and running<br>
 this will install the packages.
 4. run NPM run start
 ![GIF of the BadBanking APP](https://github.com/EliHeuman/badbankapp/blob/master/BadBankGIF.gif?raw=true)<br>
-
+___
+Technology used:
+* React 
+* Bootstrap
+* Next Update - MERN stack.
 ___
 ## Contribute
 Source Code: https://github.com/EliHeuman/badbankapp
