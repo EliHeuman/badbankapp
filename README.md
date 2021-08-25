@@ -12,9 +12,8 @@ The app is build in REACT and has linked components using the Navbar.
 
 ## Installation Guidelines:
 To get your project up and running<br>
-1. Use git clone<br>
-2. 
-![Fork Button](https://github.com/EliHeuman/badbankapp/blob/master/Fork.JPG?raw=true)<br>
+1. Fork the repository<br>
+![Image of Fork Button](https://github.com/EliHeuman/badbankapp/blob/master/Fork.JPG?raw=true)<br>
 (e.g., git clone, git pull, npm init).
 
 ###### list of links to the different repositories showcased:
