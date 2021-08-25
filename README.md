@@ -32,7 +32,7 @@ Source Code: https://github.com/EliHeuman/badbankapp
 If you are having issues, please let me know, and <a href="mailto:biz.elih@gmail.com"> email me.</a>
 ___
 ## Roadmap of future improvements and updates:
-I continually updated the project as new projects emerge.
+I continually updated the project. The next step will be to implement the full MERN stack.
 
 #### License information
 
