@@ -18,6 +18,8 @@ To get your project up and running<br>
 ![Image of Clone Button](https://github.com/EliHeuman/badbankapp/blob/master/Clone.JPG?raw=true)<br>
 3. In the file path were you want to cloned the app to. **RUN NPM INSTALL**
 this will install the packages.
+4. run NPM run start
+![GIF of the BadBanking APP](https://github.com/EliHeuman/badbankapp/blob/master/BadBankGIF.gif?raw=true)<br>
 
 ###### list of links to the different repositories showcased:
 Repository Name  | Link
