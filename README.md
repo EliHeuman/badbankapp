@@ -15,7 +15,7 @@ To get your project up and running<br>
 1. Click on **Fork** the repository in master branch<br>
 ![Image of Fork Button](https://github.com/EliHeuman/badbankapp/blob/master/Fork.JPG?raw=true)<br>
 2. git clone go to your termianal type **git clone** <br>
-3. 
+![Image of Clone Button](https://github.com/EliHeuman/badbankapp/blob/master/Clone.JPG?raw=true)<br>
 (e.g., git clone, git pull, npm init).
 
 ###### list of links to the different repositories showcased:
