@@ -21,12 +21,6 @@ this will install the packages.
 4. run NPM run start
 ![GIF of the BadBanking APP](https://github.com/EliHeuman/badbankapp/blob/master/BadBankGIF.gif?raw=true)<br>
 
-###### list of links to the different repositories showcased:
-Repository Name  | Link
--------------|--------------------
-PacMen Factory Exercise | <a href="https://github.com/EliHeuman/PacMen-Factory-Exercise">PacMen repository</a>
-Eye Exercise | <a href="https://github.com/EliHeuman/Eye">Eye repository</a>
-Bus Tracker Exercise| <a href="https://github.com/EliHeuman/Real-Time-Bus-Tracker">Bus Tracker repository</a>
 ___
 ## Contribute
 Source Code: https://github.com/EliHeuman/badbankapp
