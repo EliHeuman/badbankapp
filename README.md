@@ -4,10 +4,15 @@ Eli Heuman's GitHub BadBank Project:<a href="https://github.com/EliHeuman/eliheu
 BadBank website:<a href=https://eli-heumanbankingapplication.s3.amazonaws.com/index.html> AWS-bankingapplication</a>
 ___
 
-The GitHub Portfolio Project concludeds the first ten weeks of the MIT xPRO Full Stack Development with MERN course.
+The GitHub Portfolio Project concludeds twenty weeks of the MIT xPRO Full Stack Development with MERN course.
 
 ## Description of the Project 
-Importing Bootstrap to this project helped speed up production and styling. The project has two pages linked by a Navbar. The landing page has a Bio, and a short video, and the projects page showcases the projects I worked on during the past weeks at the MIT course.
+The BadBank APP - is build for the use of an acounting system. it helps users track thier account balance deposit and withdraw.
+The app is build in REACT and has linked components using the Navbar.
+
+##Installation Guidelines:
+Clear instructions on how to get your project up and running (e.g., git clone, git pull, npm init).
+
 ###### list of links to the different repositories showcased:
 Repository Name  | Link
 -------------|--------------------
