@@ -16,7 +16,7 @@ To get your project up and running<br>
 ![Image of Fork Button](https://github.com/EliHeuman/badbankapp/blob/master/Fork.JPG?raw=true)<br>
 2. Use the terminal and go to the file path were you want to install the app. Use git clone - go to your termianal type **git clone** with the extention as shown in the pictuer.<br>
 ![Image of Clone Button](https://github.com/EliHeuman/badbankapp/blob/master/Clone.JPG?raw=true)<br>
-3.. In the file path were you want to install the app. run **NPM INSTALL**
+3. In the file path were you want to cloned the app to. **RUN NPM INSTALL**
 ###### list of links to the different repositories showcased:
 Repository Name  | Link
 -------------|--------------------
